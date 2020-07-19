@@ -51,8 +51,6 @@ h1 {
   overflow: hidden;
   background: var(--primary-color) url('./cover.jpg') no-repeat center
     center/cover;
-  /* background: var(--primary-color) url('./bo_cover.png') no-repeat center
-    center/cover; */
 }
 
 .video-container video {

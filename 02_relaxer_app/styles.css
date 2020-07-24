@@ -64,3 +64,21 @@ body {
   z-index: -1;
   border-radius: 50%;
 }
+
+.pointer-container {
+  position: absolute;
+  /* we want it to be up above/middle of the circles */
+  top: -40px;
+  left: 140px;
+  width: 20px;
+  height: 190px;
+  /* background-color: red; */
+}
+
+.pointer {
+  background-color: #fff;
+  border-radius: 50px;
+  height: 20px;
+  width: 20px;
+  display: block;
+}

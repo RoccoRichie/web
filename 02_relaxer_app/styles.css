@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #224941 url('./img/bg.jpg') no-repeat center center/cover;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  /* We want to position to relative, as we want to position the circles absolute within the container*/
+  position: relative;
+  /* We use the transform scale propert to expand or shrink */
+  transform: scale(1);
+}
+
+/* Gradient border outisde circle - bottom circle */
+.gradient-circle {
+  /* using a gradient conic her to split the circle into different colors */
+  background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  height: 320px;
+  width: 320px;
+  /* position is absolute within the container */
+  position: absolute;
+  /* move it up and to the left so to be directly behind the other circle and to start in a different place*/
+  top: -10px;
+  left: -10px;
+  /* it needs to be behind the solid color circle */
+  z-index: -2;
+  /* make it a circle */
+  border-radius: 50%;
+}

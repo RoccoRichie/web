@@ -87,6 +87,15 @@ body {
   display: block;
 }
 
+.container.grow {
+  animation: grow 3s linear forwards;
+  /* transform-origin: center center; */
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
 /* Roate the pointer circle around the circles */
 /* put this on the pointer container */
 @keyframes rotate {
@@ -100,26 +109,28 @@ body {
   }
 }
 
-/* Grow animation */
+/* Grow animation - scale */
+/* Apply these on the container only when the have the class grow attahced to them */
 @keyframes grow {
   /* rotate from 0 to 360 degrees */
   from {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: scale(1.2);
   }
 }
 
-/* Grow animation */
+/* Shrink animation */
+/* Apply these on the container only when the have the class shrink attahced to them */
 @keyframes shrink {
   /* rotate from 0 to 360 degrees */
   from {
-    transform: rotate(0deg);
+    transform: scale(1.2);
   }
 
   to {
-    transform: rotate(360deg);
+    transform: scale(1);
   }
 }

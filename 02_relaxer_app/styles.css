@@ -52,3 +52,15 @@ body {
   /* make it a circle */
   border-radius: 50%;
 }
+
+.circle {
+  background-color: #010f1c;
+  /* container is 300x300 & the graient is 320-x320 */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 50%;
+}
